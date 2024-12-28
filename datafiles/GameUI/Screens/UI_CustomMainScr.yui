@@ -1,0 +1,43 @@
+id: UI_CustomMainScr
+file_type: screen
+
+import:
+  - ../Templates/
+  - ../Widgets/
+  - TabContents/
+  - /GameUI/Animations/transitions.yui
+
+// 'root' defines the root element for the screen, which will generally be a panel or border with the screen content inside of it
+root:
+  //type: panel 			// a panel is used to position multiple child elements inside of it
+  type: screen_base
+
+  // the canvas layout is used to position elements relative to the containing space, which in this case is the entire screen
+  // other possible layouts are: vertical, horizontal, grid, and radial
+  //layout: canvas
+  content_layout: horizontal
+
+  items:
+    - type: panel
+      layout: canvas
+
+      // here is where you add more elements to put inside the panel
+      elements:
+
+        - type: tab_panel
+          active_tab: @layouts.active_tab
+          on_tab_selected: @@ item => @layouts.active_tab = item
+          tab_content_binding: @content
+          tab_items:
+            - header: "//% Lore"
+              content: &lore
+            //- header: "//% Compendium"
+            //  content: &compendium
+            - header: "//% Beastiary"
+              content: &beastiary
+            //- header: Character
+            //  content: &character
+            //- header: Map
+            //  content: &map
+            //- header: Settings
+            //  content: &settings

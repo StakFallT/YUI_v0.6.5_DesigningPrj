@@ -1,0 +1,23 @@
+file_type: resources
+
+//import:
+//  - shared.yui
+
+resources:
+
+  beastiary_entry:
+    type: fragment
+    content:
+      type: panel
+      layout: horizontal
+      spacing: 15
+      elements:
+
+        - type: text
+          text: @beastiary_entry_info.number
+
+        - type: text
+          text: ": "
+
+        - type: text
+          text: @beastiary_entry_info.name

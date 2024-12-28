@@ -1,0 +1,22 @@
+file_type: resources
+
+import:
+  // - shared.yui
+  - beastiary_panes.yui
+
+resources:
+
+  beastiary:
+    type: panel
+    elements:
+
+      - type: panel
+        background: $theme.resources.subpanel_bg
+        spacing: 22
+        padding: 20
+        elements:
+          - type: panel
+            spacing: 5
+            elements: @beastiary.slots
+            template:
+              type: beastiary_entry

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"YuiPauseGUIManager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"YuiPauseGUIManager",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

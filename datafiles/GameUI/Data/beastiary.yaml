@@ -1,0 +1,18 @@
+slots:
+  - slot: entry0
+    name: Entry0
+  - slot: entry1
+    name: Entry1
+
+items:
+  - name: entry0Info
+    number: 0
+    enemyname: Some enemy 0
+    sprite: null
+    slot: entry0
+
+  - name: entry1Info
+    number: 1
+    enemyname: Some enemy 1
+    sprite: null
+    slot: entry1
